@@ -1,0 +1,21 @@
+body {
+        background-color: #111;
+        color: #f1f1f1;
+      }
+      .navbar {
+        background-color: #000 !important;
+      }
+      .navbar-brand, .nav-link {
+        color: #f1f1f1 !important;
+      }
+      .nav-link.active {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+
+  body {
+    background-color: #111;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', sans-serif;
+  }
