@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edición "Verde Claro" — Bio Funda</title>
+  <meta name="description" content="Detalle del producto Edición Verde Claro — funda 3D en PLA, ligera y anti-huellas." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f6fbf8;
+      --card:#ffffff;
+      --accent:#8ad29e;
+      --accent-2:#b7e7c9;
+      --muted:#6b7280;
+      --glass: rgba(255,255,255,0.6);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#eef8f1);color:#0f172a;}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo {width:48px;height:48px;border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent),var(--accent-2));}
+    .logo img{width:100%;height:100%;object-fit:cover}
+    nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600}
+    nav a:hover{color:var(--accent)}
+    main{padding:12px 0}
+    .product-card{background:var(--card);border-radius:16px;padding:22px;box-shadow:0 8px 30px rgba(13,59,37,0.06);display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center}
+    .product-media{display:flex;flex-direction:column;gap:12px;align-items:center}
+    .product-frame{width:100%;max-width:420px;height:420px;border-radius:18px;background:conic-gradient(from 210deg,#e9ffee,#cff6dc,#b7e7c9);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(10,40,20,0.06);}
+    .product-frame img{max-width:88%;max-height:88%;border-radius:12px}
+    .thumbs{display:flex;gap:8px;margin-top:6px}
+    .thumb{width:72px;height:72px;border-radius:10px;background:#f0fff4;display:flex;align-items:center;justify-content:center;overflow:hidden;cursor:pointer;border:2px solid transparent}
+    .thumb img{width:100%;height:100%;object-fit:cover}
+    .thumb:hover{border-color:var(--accent)}
+    .product-info{padding:6px 2px}
+    .product-info h1{margin:0 0 8px;font-size:24px}
+    .product-info p.lead{margin:0 0 12px;color:var(--muted)}
+    .price{font-size:20px;font-weight:800;margin-bottom:12px}
+    .cta{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:700}
+    .meta{margin-top:12px;color:var(--muted);font-size:0.95rem}
+    .specs{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .spec{padding:8px 12px;background:var(--glass);border-radius:10px;font-weight:600}
+    .back{display:inline-block;margin-top:14px;color:var(--muted);text-decoration:none;font-weight:600}
+    footer{padding:24px;text-align:center;color:var(--muted)}
+    @media(max-width:880px){.product-card{grid-template-columns:1fr;}.product-frame{height:320px}}
+  </style>
+</head>
+<body>
+  <header class="container">
+    <div class="brand">
+      <a href="index.html" style="display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit">
+        <div class="logo"><img src="./Assets/Logo.png" alt="Bio Funda"></div>
+        <div>
+          <div style="font-weight:700">Bio Funda</div>
+          <small style="color:var(--muted)">Fundas 3D sostenibles</small>
+        </div>
+      </a>
+    </div>
+
+    <nav>
+      <a href="index.html#ventajas">Ventajas</a>
+      <a href="index.html#comparacion">Comparación</a>
+      <a href="index.html#productos">Productos</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="product-card" aria-label="Detalle producto Edición Verde Claro">
+      <div class="product-media">
+        <div class="product-frame" id="mainFrame">
+          <img src="./Assets/Funda3D.png" alt="Funda Edición Verde Claro">
+        </div>
+
+        <div class="thumbs" role="list">
+          <!-- miniaturas; cambiá las rutas si querés varias vistas -->
+          <div class="thumb" role="listitem" onclick="setMain('./Assets/Funda3D2.png')">
+            <img src="./Assets/Funda3D2.png" alt="Vista frontal">
+          </div>
+          <div class="thumb" role="listitem" onclick="setMain('./Assets/Funda3D3.png')">
+            <img src="./Assets/Funda3D3.png" alt="Vista lateral">
+          </div>
+          <div class="thumb" role="listitem" onclick="setMain('./Assets/Funda3D.png')">
+            <img src="./Assets/Funda3D.png" alt="Detalle textura">
+          </div>
+        </div>
+      </div>
+
+      <div class="product-info">
+        <h1>EcoShield</h1>
+        <p class="lead">Ligera, resistente y con textura anti-huellas. Impresa en PLA, con opciones de personalización de color y relieve.</p>
+
+        <div class="price">$9.075 ARS</div>
+
+        <a class="cta" href="https://wa.me/5492617164962?text=Hola%20quiero%20la%20Edición%20Verde%20Claro%20-%20Bio%20Funda" target="_blank" rel="noopener">Comprar por WhatsApp</a>
+
+        <div class="meta">
+          <div class="specs">
+            <div class="spec">Material: PLA</div>
+            <div class="spec">Tiempo: 3-7 días</div>
+            <div class="spec">Envío: todo el país</div>
+          </div>
+
+          <p style="margin-top:12px;color:var(--muted)">Pide tu personalización — color, relieve o logo. Producción bajo demanda con filamento certificado.</p>
+
+          <a class="back" href="index.html">← Volver a Productos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- sección rápida con detalles técnicos -->
+    <section style="margin-top:18px;background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(8,59,26,0.03)">
+      <h3 style="margin:0 0 8px">Detalles técnicos</h3>
+      <ul style="margin:0;color:var(--muted);padding-left:18px">
+        <li>Impresión: FDM (calidad estándar / fina disponible)</li>
+        <li>Grosor: ~1.2 mm (según modelo)</li>
+        <li>Acabado: textura mate anti-huellas</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© 2025 Bio Funda · Fundas 3D en PLA · Hecho con impresión bajo demanda</small>
+    </div>
+  </footer>
+
+  <script>
+    // Cambia imagen principal al hacer click en miniaturas (asegurate de tener esas imágenes o quita las thumbs)
+    function setMain(src){
+      const img = document.querySelector('#mainFrame img');
+      if(!img) return;
+      img.src = src;
+    }
+  </script>
+</body>
+</html>
